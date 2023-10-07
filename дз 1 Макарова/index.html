@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Заполните следующую форму для регистрации:</h1>
+   <form action="">
+    <p>
+        <label for="name">User name:</label>
+        <input 
+            name="Username"
+            type="text" 
+            placeholder="Enter your name"
+            id="name"
+            minlength="2"
+            maxlength="64"
+            required
+        >
+    </p>
+    <p>
+        <label for="date">User birth date:</label>
+        <input 
+            name="Userdate"
+            type="date" 
+            id="date"
+            min="1923-04-01"
+            max="2023-10-07"
+            required
+        >
+    </p>
+    <p>
+        <label for="phone">Phone:</label>
+        <input 
+            name="Userphone"
+            type="phone" 
+            id="phone"
+            pattern="^/+7[1-9]{10}$"
+        >
+    </p>
+    <p>
+        <label for="mail">Email:</label>
+        <input 
+            name="Usermail"
+            type="email" 
+            id="mail"
+            required
+        >
+    </p>
+    <p>
+        <label for="password">Password:</label>
+        <input 
+            name="Userpassword"
+            type="password" 
+            id="password"
+            pattern="(?=.*/d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        >
+    </p>
+    <p> 
+        <label for="comment">Your comment:</label>
+        <textarea name="Usercomment" id="comment" placeholder="Text comment"></textarea>
+    </p>
+    <p>
+        <button type="submit">Send</button>
+    </p>
+   </form> 
+</body>
+</html>
