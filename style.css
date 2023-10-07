@@ -1,0 +1,32 @@
+h1 {
+    width: 520px;  
+}
+form {
+   margin: 0%;
+   width: 520px; 
+   padding: 1em;
+   border: 1px solid #ccc;
+   border-radius: 1em;
+}
+label {
+    display: inline-block;
+    width: 130px;
+    text-align: right;
+}
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+button {
+    padding-right: 90px;
+    margin-left: 306px;
+    color: rgb(6, 2, 31);
+    background-color:#999;
+}
